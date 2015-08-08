@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>take the moment and make it Perfect</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+    var curScene = 0;
+
+    function changeScene(decision) {
+        var message = "";
+
+        if (curScene == 0) {
+            curScene = 1;
+            message = "Hi 想來點不一樣";
+        } else if (curScene == 1) {
+            if (decision == 1) {
+                curScene = 2
+                message = "challenges for me";
+            } else {
+                curScene = 3;
+                message = "流連於她們的故事而忘返";
+            }
+        } else if (curScene == 2) {
+            if (decision == 1) {
+                curScene = 4
+                message = "最近在學習";
+            } else {
+                curScene = 5;
+                message = "還有一些要更努力的事情";
+            }
+        } else if (curScene == 3) {
+            if (decision == 1) {
+                curScene = 6
+                message = "星期五 Abby給借我一本書，“靈魂有香氣的女子“，這本書有關於民初二十六位名女人的愛情故事，想跟大家分享--";
+            } else {
+                curScene = 7;
+                message = "星期五 Abby給借我一本書，“靈魂有香氣的女子“，這本書有關於民初二十六位名女人的愛情故事，想跟大家分享--";
+            }
+        } else if (curScene == 4) {
+            if (decision == 1) {
+                curScene = 8
+            } else {
+                curScene = 8;
+                message = "總之 還是要努力！";
+            }
+        } else if (curScene == 5) {
+            curScene = 8;
+        } else if (curScene == 6) {
+            curScene = 9;
+        } else if (curScene == 7) {
+            if (decision == 1) {
+                curScene = 9
+                message = "";
+            } else {
+                curScene = 9;
+            }
+        } else if (curScene == 8) {} else if (curScene == 9) {}
+
+        document.getElementById("sceneimg").src = "scene" + curScene + ".png";
+        if (message != "")
+            alert(message);
+    }
+    </script>
+    </head>
+
+    <body>
+        <div style="margin-top:20px; text-align:center">
+            <img id="sceneimg" src="scene0.png" alt="diary" />
+            <br /> Please choose:
+            <input type="button" id="decision1" value="1" onclick="changeScene(1)" />
+            <input type="button" id="decision2" value="2" onclick="changeScene(2)" />
+        </div>
+    </body>
+
+</html>
+</body>
+
+</html>

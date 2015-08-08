@@ -1,0 +1,33 @@
+input#decision1 {
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    background: #a0d486;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+input#decision1:hover {
+    background: #51d459;
+    text-decoration: none;
+}
+
+input#decision2 {
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    background: #a0d486;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+input#decision2:hover {
+    background: #51d459;
+    text-decoration: none;
+}
